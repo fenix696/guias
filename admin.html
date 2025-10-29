@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Videos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Videos Tutoriales</h1>
+    </header>
+    <main>
+        <form id="video-form">
+            <label for="video-url">URL del Video de YouTube:</label>
+            <input type="url" id="video-url" name="video-url" placeholder="https://www.youtube.com/watch?v=..." required>
+            
+            <label for="video-title">Título del Video:</label>
+            <input type="text" id="video-title" name="video-title" placeholder="Título del video" required>
+            
+            <button type="submit">Agregar Video</button>
+        </form>
+        <div>
+            <label for="video-search">Buscar Videos:</label>
+            <input type="text" id="video-search" name="video-search" placeholder="Buscar por título...">
+        </div>
+        <div id="video-list">
+            <!-- Aquí se mostrarán los videos agregados -->
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Alberto @Alf</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

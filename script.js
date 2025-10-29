@@ -1,0 +1,1 @@
+// Este archivo puede ser utilizado para agregar funcionalidad adicional en la página principal

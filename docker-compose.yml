@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:16
+    container_name: video_app
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app # Mount the entire project directory
+    ports:
+      - "3000:3000" # Expose port 3000
+    command: ["sh", "-c", "npm install && npm start"] # Install dependencies and start the server
+    stdin_open: true
+    tty: true
